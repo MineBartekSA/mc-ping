@@ -38,7 +38,7 @@ The following configuration samples contain the default values. All non required
 
 The following configuration must be in a `firebase.json` file in the current working directory:
 
-```json
+```jsonc
 {
     // This field is required.
     // The key used to authorize requests to Firebase
@@ -97,7 +97,7 @@ You can find the Notification payload model in [the official documentation.](htt
 
 The following configuration must be in a `discord.json` file in the current working directory:
 
-```json
+```jsonc
 {
     // This field is required.
     "webhook": "<Discord Webhook URL>",
@@ -125,7 +125,7 @@ You can find message body model in [the official documentation.](https://discord
 
 The following configuration must be in a `slack.json` file in the current working directory:
 
-```json
+```jsonc
 {
     // This field is required.
     "webhook": "<Slack Webhook URL>",
@@ -158,7 +158,7 @@ You can find message body model in [the official documentation.](https://api.sla
 
 The following configuration must be in a `custom.json` file in the current working directory:
 
-```json
+```jsonc
 {
     // This field is required.
     // A valid HTTP URL. Placeholders will not be replaced
