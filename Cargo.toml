@@ -1,0 +1,33 @@
+[package]
+name = "mc-ping"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+strip = true
+opt-level = "s"
+lto = true
+codegen-units = 16
+
+[dependencies]
+async-std = { version = "1", default-features = false, features = ["attributes"] }
+futures-util = { version = "0.3", default-features = false }
+serde = { version = "1", default-features = false, features = ["derive"] }
+serde_json = "1"
+serde_bytes = "0.11"
+once_cell = "1"
+resolv = "0.3"
+
+surf = { version = "2", default-features = false, features = ["h1-client-rustls", "middleware-logger"] }
+
+log = "0.4"
+pretty_env_logger = "0.4"
+
+[features]
+default = []
+firebase = []
+discord = []
+slack = []
+custom = []
